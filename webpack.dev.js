@@ -8,6 +8,6 @@ module.exports = merge(Common, {
     contentBase: './dist',
   },
   experiments: {
-    topLevelAwait: true
-  }
+    topLevelAwait: true,
+  },
 });
