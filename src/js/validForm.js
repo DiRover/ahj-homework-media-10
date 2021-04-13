@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 export default function validForm(text) {
   const reqexp = /^\[?\s?[0-9]{1,2}.[0-9]+,\s?-?[0-9]{1,2}.[0-9]+\s?]?$/; // пришлось экранировать [, а ] нет
   const validCoords = reqexp.test(text); // проверяем валидность координат

@@ -1,3 +1,6 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable no-console */
+/* eslint-disable no-param-reassign */
 export default async function audioRecorder(api) {
   console.log('audio record started');
   api.stream = await navigator.mediaDevices.getUserMedia({
