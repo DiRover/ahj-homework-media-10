@@ -1,4 +1,6 @@
+[![Build status](https://ci.appveyor.com/api/projects/status/ixhlxkarwb7plqh0?svg=true)](https://ci.appveyor.com/project/DiRover/ahj-homework-media-10)
 
+[PAGE Task 10 GEO & MEDIA](https://dirover.github.io/ahj-homework-media-10/)
 
 Правила сдачи задания:
 
