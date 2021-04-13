@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Ravi+Prakash&display=swap');
+
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+  
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+  
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+  
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+}
+
+.material-icons.red {
+    color: red;
+}
+
+.page {
+    width: 70vw;
+    margin: 100px auto 0;
+    position: relative;
+}
+
+button {
+    cursor: pointer;
+}
+
+.modal-container {
+    box-sizing: border-box;
+    background-color: cadetblue;
+    width: 300px;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.modal {
+    width: 250px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: rgb(226, 131, 43);
+    top: 30px;
+    position: absolute;
+    z-index: 9999;
+}
+
+.modal-msg {
+    text-align: center;
+}
+
+.msg-coords {
+    width: 220px;
+}
+
+.modal-buttons {
+    display: flex;
+    box-sizing: border-box;
+    margin-top: 5px;
+    justify-content: center;
+}
+
+.modal-button {
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+    width: 60px;
+    height: 20px;
+    background-color: rgb(172, 145, 76);
+}
+
+
+.modal-button:last-child {
+    margin-left: 10px;
+}
+
+.modal-button:focus {
+    outline: none;
+}
+
+#video {
+    position: absolute;
+    top: 40px;
+    left: calc(50% - 300px/2);
+    width: 320px;
+    height: 240px;
+}
+
+.msg-container {
+    width: auto;
+    height: 200px;
+    overflow: auto;
+    box-sizing: border-box;
+    margin: 0 auto;
+    border: 3px black;
+    border-style: solid solid none solid;
+    border-radius: 10px 10px 0 0;
+    padding: 10px;
+    background-color: burlywood;
+}
+
+.msg {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    margin: 10px auto 0;
+    padding: 10px;
+    width: 30vw;
+    border: solid 1px rgb(66, 64, 64);
+    border-radius: 10px;
+    background-color: cadetblue;
+}
+
+.msg-time {
+    font-size: 0.8rem;
+    align-self: flex-end;
+    margin: 0;
+}
+
+.msg-text {
+    margin: 0;
+}
+
+.msg-coords {
+    font-size: 0.8rem;
+    margin: 5px 0 0 0;
+}
+
+.time-line-send-msg {
+    display: flex;
+    box-sizing: border-box;
+    width: auto;
+    justify-content: space-between;
+    padding: 3px;
+    border: 1px solid black;
+    border-radius: 0 0 10px 10px;
+    border-width: 1px 3px 3px 3px;
+    background-color: burlywood;
+}
+
+.time-line-input {
+    height: 30px;
+    box-sizing: border-box;
+    border: none;
+    width: 700px;
+    background-color: burlywood;
+}
+
+.time-line-input:focus {
+    outline: none;
+    background-color: burlywood;
+}
+
+.time-line-input:changed {
+    background-color: crimson;
+}
+
+.time-line-button {
+    margin-left: 10px;
+    height: 30px;
+}
+
+.buttons-control {
+    display: flex;
+    flex-direction: row;
+    height: 30px;
+    align-items: center;
+}
+
+.record-time {
+    box-sizing: border-box;
+    margin: 0 3px;
+}
+
+.warring {
+    color: red;
+}
+
+.hidden {
+    display: none;
+}

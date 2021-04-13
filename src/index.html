@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media</title>
+</head>
+<body>
+    <div class="page">
+        <main>
+            <article class="time-line">
+                <div class="modal-container">
+                    <div class="modal modal-permission hidden">
+                        <p class="modal-msg">For use this site we need your permission to get your coordinates, record audio or video. Please, click "Next" to Continue</p>
+                        <div class="modal-buttons">
+                            <button class="modal-button modal-button-cancel">Cancel</button>
+                            <button class="modal-button modal-button-next">Next</button>
+                        </div>
+                    </div>
+                    <div class="modal modal-req-cootds hidden">
+                        <p class="modal-msg">Your coordinations are not available, please, write them below</p>
+                        <form id="form-coords">
+                            <input type="text" class="msg-coords">
+                        </form>
+                        <div class="modal-buttons">
+                            <button class="modal-button modal-button-cancel">Cancel</button>
+                            <button form="form-coords" class="modal-button modal-button-ok">Ok</button>
+                        </div>
+                    </div>
+                    <div class="modal modal-media hidden">
+                        <p class="modal-msg">Your browser does not support MediaDevices, please choose another browser</p>
+                        <div class="modal-buttons">
+                            <button class="modal-button modal-media-unsupport">Ok</button>
+                        </div>
+                    </div>
+                </div>
+                <video muted="muted" id="video" class="hidden" controls></video>
+                <div class="msg-container"></div>
+                <div class="time-line-send-msg">
+                    <form class="text-form" id='text-form' novalidate>
+                        <input type="text" id="time-line-input" class="time-line-input" placeholder="Enter text" required>
+                    </form>
+                    <div class="buttons">
+                        <div class="buttons-type-msg">
+                            <button form="text-form" class="button-text material-icons">send</button>
+                            <button class="button-audio material-icons">mic</button>
+                            <button class="button-video material-icons">videocam</button>
+                        </div>
+                        <div class="buttons-control hidden">
+                            <button class="start material-icons red">fiber_manual_record</button>
+                            <div class="record-time">00:00</div>
+                            <button class="stop material-icons">stop</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="empty-msg warring hidden">You are trying to send a empty message!</div>
+                <div class="permission-notification warring hidden">We need your permission! Please, click "Next" button</div>
+                
+            </article>
+            
+        </main>
+        
+    </div>
+    <video muted="muted" id="video" class="hidden" controls></video>
+</body>
+</html>
